@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Github User\'s</string>
+    <string name="detaiuser">Detail User</string>
+    <string name="avatar">Avatar</string>
+    <string name="repository">repository</string>
+    <string name="fullname">Muhammad Akbar Fauzi</string>
+    <string name="following">following</string>
+    <string name="followers">followers</string>
+    <string name="logo">logo</string>
+    <string name="change_language">Change Language</string>
+    <string name="search_hint">Enter username</string>
+    <string name="tab_follower">Follower</string>
+    <string name="tab_following">Following</string>
+    <string name="user_not_found">User Not Found</string>
+    <string name="company">Company</string>
+    <string name="name">Name</string>
+    <string name="location">Location</string>
+    <string name="html_url">html_url</string>
+    <string name="username">Username</string>
+    <string name="background">Background</string>
+    <string name="blog">Blog</string>
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.icm.githubusers">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SET_ALARM" />
+
+    <permission
+        android:name="com.icm.githubusers.provider.READ_DATABASE"
+        android:protectionLevel="normal" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="AllowBackup">
+
+        <provider
+            android:name=".provider.FavoriteUserProvider"
+            android:authorities="com.icm.githubusers.provider"
+            android:enabled="true"
+            android:exported="true"
+            android:multiprocess="true"
+            android:readPermission="com.icm.githubusers.provider.READ_DATABASE" />
+
+        <activity
+            android:name=".views.NotificationActivity"
+            android:configChanges="orientation|screenSize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".views.MainActivity" />
+        </activity>
+        <activity
+            android:name=".views.FavoriteActivity"
+            android:configChanges="orientation|screenSize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".views.MainActivity" />
+        </activity>
+        <activity
+            android:name=".views.SplashScreen"
+            android:noHistory="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".views.MainActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".views.DetailUser"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/detaiuser"
+            android:parentActivityName=".views.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".views.MainActivity" />
+        </activity>
+
+        <receiver android:name=".provider.NotificationBroadcast" />
+    </application>
+
+</manifest>

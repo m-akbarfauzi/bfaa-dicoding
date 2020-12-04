@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pengguna Github</string>
+    <string name="detaiuser">Detail User</string>
+    <string name="avatar">Avatar</string>
+    <string name="repository">repository</string>
+    <string name="fullname">Muhammad Akbar Fauzi</string>
+    <string name="following">mengikuti</string>
+    <string name="followers">pengikut</string>
+    <string name="logo">logo</string>
+    <string name="change_language">Ganti Bahasa</string>
+    <string name="search_hint">Masukan Nama Pengguna</string>
+    <string name="tab_follower">Pengikut</string>
+    <string name="tab_following">Mengikuti</string>
+    <string name="user_not_found">User Tidak Ditemukan</string>
+    <string name="company">Perusahaan</string>
+    <string name="name">Nama</string>
+    <string name="location">Lokasi</string>
+    <string name="html_url">html_url</string>
+    <string name="username">Username</string>
+    <string name="background">Background</string>
+    <string name="blog">Blog</string>
+    <string name="no">Tidak</string>
+    <string name="delete_success">Berhasil dihapus dari favorit</string>
+    <string name="yes">Ya</string>
+    <string name="alert_delete">Hapus</string>
+    <string name="confirm_delete">Hapus dari favorit?</string>
+    <string name="empty_fav">There are no farovites added yet</string>
+    <string name="favorite">Favorit</string>
+    <string name="fav_success_add">Berhasil ditambahkan ke favorit!</string>
+    <string name="notification">Pemberitahuan</string>
+    <string name="notification_application">Tampilkan Notifikasi Aplikasi</string>
+    <string name="notification_settings">Pengaturan Notifikasi</string>
+    <string name="notification_text">Ayo cari beberapa pengguna di GitHub!</string>
+</resources>
